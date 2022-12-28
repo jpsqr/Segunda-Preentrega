@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: lightgray;
+    font-family:"cabin";
+    position: relative;
+    padding-bottom: 15px;
+    min-height: 100vh;
+   
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: solid 3px white;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex
+}
+
+
+.logo img{
+    height: 70px;
+}
+
+nav a{
+    padding: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.contenido_inicio{
+    position: absolute;
+    }
+
+.texto_inicio{
+    color: white;
+    font-size: 100px;
+}
+
+.texto_inicio{
+    left:50%;
+    margin-left:-50px;
+    
+}
+
+.contenedor_texto_inicio{
+    display: flex;
+    width:400px;
+    height: 40px;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+
+    position: absolute;
+    top: 135px;
+    right: 0;
+    
+    left: 0;
+    margin:auto;
+
+    overflow: hidden;
+}
+
+.ul_texto_inicio{
+    text-align: center;
+    list-style: none;
+    
+    animation: cambiar 4s infinite;
+}
+
+.li_texto_inicio{
+    margin:0px;
+
+}
+
+@keyframes cambiar {
+    0%{ margin-top: 0; }
+    20%{margin-top: 0;}
+
+    25%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+
+    55%{margin-top: -80px;}
+    80%{margin-top: -80px;}
+
+    85%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+
+    100%{margin-top: 0px;}
+
+
+}
+
+.grid-container{
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat (8, 100px);
+    gap: 10px;
+    padding: 10px
+}
+
+.grid-container >*{
+    background-color: green;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+}
+
+.artista{
+    grid-column: 1 / span 3;
+}
+
+@media all and (max-width: 768px){
+    .disco{
+    grid-column: 1 / span 3;
+}
+}
+
+.artista{
+    color: white;
+    background-color:#2b5f3b;
+    font-size: 25px;
+    padding: 10px;  
+}
+
+.disco{
+    
+    background-color: white;
+    padding: 10px;
+}
+
+.imagen_disco{
+    width:250px;
+    height: 250px;
+}    
+
+.titulo_disco{
+    color: black;
+    font-size: 20px;
+}
+  
+.datos_disco{
+    color: darkgray;
+}
+
+footer {
+    background-color: black;
+    color: gray;
+    padding: 10px;
+    position: absolute;
+    width:100%;
+    border-top:  solid 3px white;
+    
+    
+}
+
+
